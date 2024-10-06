@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Naruto Fight Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Simulator</h1>
+        
+        <!-- Player Section -->
+        <div id="player" class="character-section">
+            <h2>Player: Naruto</h2>
+            <img id="naruto-img" class="character-img" src="sprite1.png" alt="Naruto">
+            <div class="health-bar">
+                <div id="player-health-bar" class="health"></div>
+            </div>
+            <p id="player-health">HP: 100</p>
+        </div>
+
+        <!-- Enemy Section -->
+        <div id="enemy" class="character-section">
+            <h2>Enemy: Sasuke</h2>
+            <img id="sasuke-img" class="character-img" src="sprite2.png" alt="Sasuke">
+            <div class="health-bar">
+                <div id="enemy-health-bar" class="health"></div>
+            </div>
+            <p id="enemy-health">HP: 100</p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+            <button id="attack-button">Attack</button>
+            <button id="retry-button" style="display: none;">Retry</button>
+        </div>
+
+        <!-- Game Log -->
+        <div id="log" class="log"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
